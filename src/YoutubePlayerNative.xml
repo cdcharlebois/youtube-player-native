@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.youtubeplayernative.YoutubePlayerNative" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Youtube Player Native</name>
+    <description>A native video player for Youtube videos</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="videoId" type="expression" defaultValue="">
+                <caption>Video Id</caption>
+                <description>The id of the video to play</description>
+                <returnType type="String" />
+            </property>
+            <property key="apiKey" type="expression" defaultValue="">
+                <caption>API Key</caption>
+                <description>YouTube Developers API Key</description>
+                <returnType type="String" />
+            </property>
+            <property key="autoStart" type="boolean" defaultValue="false">
+              <caption>Auto start</caption>
+              <description>Automatically start plying the video after it loads.</description>
+            </property>
+            <property key="loop" type="boolean" defaultValue="false">
+              <caption>Loop</caption>
+              <description>Repeat the video after it finishes.</description>
+            </property>
+            <property key="height" type="integer" defaultValue="300" required="true">
+             <caption>Video height</caption>
+              <description></description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Common">
+            <systemProperty key="Visibility"/>
+        </propertyGroup>
+    </properties>
+</widget>
